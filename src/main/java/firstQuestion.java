@@ -11,7 +11,7 @@ public class firstQuestion extends RecursiveAction {
         this.lo = lo;
     }
     public long countNumberSeq(){
-        for(int i = 0 ; i< arr.length; ++i){
+        for(int i = 0 ; i< arr.length; i++){
             if(arr[i]==number){
                 count+=1;
             }
@@ -32,7 +32,7 @@ public class firstQuestion extends RecursiveAction {
             left.join();
             count = left.count + right.count;
         } else {
-            for(int i = lo; i <= hi; i++){
+            for(int i = lo; i <= hi; ++i){
                 if(arr[i]==number){
                     count+=1;
                 }
