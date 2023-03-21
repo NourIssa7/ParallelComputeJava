@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class TestFirstQuestion {
+public class Test {
 
         public static void main( String args[] ) {
             int size = 1000000000;
@@ -19,10 +19,13 @@ public class TestFirstQuestion {
         }
             firstQuestion firstq = new firstQuestion(arr, 3,arr.length - 1, 0 );
             long start = System.currentTimeMillis();
-//            firstq.compute();
+            firstq.compute();
+//            System.out.println("campo");
 //            firstq.countNumberSeq();
+//            System.out.println("campo");
 //            firstq.computeStreamSeq();
-            firstq.computeStreamParallel();
+//            System.out.println("campo");
+//            firstq.computeStreamParallel();
 
             long execTime = System.currentTimeMillis() - start;
             System.out.println("Execution Time: " + execTime + " ms");
