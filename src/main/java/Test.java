@@ -37,9 +37,10 @@ public class Test {
             // **************** Third Question Test ****************** //
             Fibonacci f = new Fibonacci(40);
             long start = System.currentTimeMillis();
-//            int fib = f.computeSeq();
+            int fibSeq = f.computeSeq();
             int fib = f.compute();
-            System.out.println(fib);
+            System.out.println("Fibonacci Sequential "+fibSeq);
+            System.out.println("Fibonacci ForkJoin"+ fib);
             long execTime = System.currentTimeMillis() - start;
             System.out.println("Execution Time: " + execTime + " ms");
 
